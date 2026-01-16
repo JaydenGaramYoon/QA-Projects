@@ -31,7 +31,6 @@
 Broken Access Control means the system fails to enforce proper restrictions on what resources a user can access. This is the #1 OWASP vulnerability with critical impact.
 
 ### Key Concept
-- **"토큰 신뢰 경계 검증"을 증명하기 위한 최소 TC**
 - Tokens prove **AUTHENTICATION** (who you are)
 - But don't automatically prove **AUTHORIZATION** (what you can access)
 - Each resource access requires separate authorization check
@@ -353,7 +352,7 @@ If attacker compromises admin token:
 <img width="736" height="462" alt="image" src="https://github.com/user-attachments/assets/7ee1e66f-f680-477f-98ed-c2b0aeda1edf" />
 
 - Response status: **200 (OK)**
-- Response: **token 설정 안해도 200** (Returns 200 even without token set)
+- Response: Returns 200 even without token set
 - **CRITICAL SECURITY ISSUE:** Cart access completely unprotected
 - **Risk:** Anyone can access anyone's cart without authentication
 
@@ -639,6 +638,7 @@ After fixes are implemented:
 **Report Date:** January 16, 2026  
 **System Status:** 🔴 NOT PRODUCTION READY  
 **Recommendation:** DO NOT DEPLOY until all critical issues are resolved
+
 
 
 
