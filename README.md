@@ -13,7 +13,8 @@
      - [Requirement Traceability Matrix v1.0](https://github.com/JaydenGaramYoon/QA-Projects/blob/main/Testing%20Project%203%20-%20E-commerce%20Web%20App/Requirement%20Traceability%20Matrix%20v1.0.pdf)
      - [Risk-Based Priority Matrix v1.0](https://github.com/JaydenGaramYoon/QA-Projects/blob/main/Testing%20Project%203%20-%20E-commerce%20Web%20App/Risk-Based%20Priority%20Matrix%20v1.0.pdf)
   3) Test Analysis
-     - [Exploratory Testing | Critical Defects Analysis](https://github.com/JaydenGaramYoon/QA-Projects/blob/main/Testing%20Project%203%20-%20E-commerce%20Web%20App/CRITICAL_TESTS_ANALYSIS.md)
+     - [Exploratory Testing | Security Defects Analysis](https://github.com/JaydenGaramYoon/QA-Projects/blob/main/Testing%20Project%203%20-%20E-commerce%20Web%20App/CRITICAL_TESTS_ANALYSIS.md)
+
 
 
 
