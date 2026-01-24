@@ -1,8 +1,7 @@
 # UniStyle CRITICAL Security Tests Analysis
-## Document: UniStyle_CRITICAL_Tests_Enhanced_20260111.docx
 
 **Analysis Date:** January 16, 2026  
-**Document Version:** 3.0  
+**Document Version:** 1.0  
 **Focus:** CRITICAL TESTS ONLY (A01 & A07 OWASP Top 10 2025)
 
 ---
@@ -10,10 +9,10 @@
 ## 📊 Executive Summary
 
 ### Document Overview
-- **Total Test Cases:** 30 (15 per category)
+- **Total Test Cases:** 8
 - **Categories Covered:**
-  - **A01:2025** - Broken Access Control (15 tests)
-  - **A07:2025** - Authentication Failures (15 tests)
+  - **A01:2025** - Broken Access Control
+  - **A07:2025** - Authentication Failures
 - **Risk Level:** CRITICAL ONLY
 - **All tests** are priority-critical for system security
 
@@ -32,7 +31,6 @@
 Broken Access Control means the system fails to enforce proper restrictions on what resources a user can access. This is the #1 OWASP vulnerability with critical impact.
 
 ### Key Concept
-- **"토큰 신뢰 경계 검증"을 증명하기 위한 최소 TC**
 - Tokens prove **AUTHENTICATION** (who you are)
 - But don't automatically prove **AUTHORIZATION** (what you can access)
 - Each resource access requires separate authorization check
@@ -45,7 +43,6 @@ Broken Access Control means the system fails to enforce proper restrictions on w
 Authentication failures mean weaknesses in how the system verifies user identity through JWT tokens.
 
 ### Key Concept
-- **"토큰은 유효해도 리소스 접근은 별도 검증" 증명**
 - A token being valid ≠ the user should access that resource
 - Authentication and Authorization are separate security controls
 
@@ -81,6 +78,8 @@ Authentication failures mean weaknesses in how the system verifies user identity
   - Complete system compromise
 
 #### 🔴 ACTUAL RESULT: **FAIL**
+<img width="681" height="503" alt="image" src="https://github.com/user-attachments/assets/f0c2b6a0-38bc-4074-a976-2a6a1827d7bd" />
+
 - Response status: **200 (OK)**
 - **SECURITY ISSUE:** Server is accepting tokens without valid signatures
 - **Risk:** Attackers can forge tokens without knowing the signing secret
@@ -119,6 +118,8 @@ Authentication failures mean weaknesses in how the system verifies user identity
   - Maintaining data isolation
 
 #### 🔴 ACTUAL RESULT: **FAIL**
+<img width="674" height="415" alt="image" src="https://github.com/user-attachments/assets/0715b436-cc3c-4828-81b2-de67f78f8de1" />
+
 - Response status: **200 (OK)**
 - **SECURITY ISSUE:** Token payload modifications are accepted
 - **Risk:** Users can modify token claims to access other users' data
@@ -163,6 +164,8 @@ User A could:
   - No way to revoke old tokens
 
 #### 🔴 ACTUAL RESULT: **FAIL**
+<img width="736" height="395" alt="image" src="https://github.com/user-attachments/assets/3792df25-15ad-4da2-9ac1-476695914df6" />
+
 - Response status: **200 (OK)**
 - **SECURITY ISSUE:** Expired tokens continue to work indefinitely
 - **Risk:** Stolen tokens never expire and grant permanent access
@@ -208,6 +211,8 @@ If attacker steals a token:
   - This is a proven attack vector in the wild
 
 #### 🔴 ACTUAL RESULT: **FAIL**
+<img width="762" height="427" alt="image" src="https://github.com/user-attachments/assets/e618181e-d5d9-4509-9359-92759e8e5a93" />
+
 - Response status: **200 (OK)**
 - **SECURITY ISSUE:** Server accepts tokens with "none" algorithm
 - **Risk:** Any attacker can create valid tokens without the secret key
@@ -255,6 +260,8 @@ Attacker can:
 - If admin account is compromised, attackers shouldn't be able to escalate further
 
 #### 🔴 ACTUAL RESULT: **FAIL**
+<img width="825" height="385" alt="image" src="https://github.com/user-attachments/assets/1cdc271d-d86b-45d9-b633-065263d238da" />
+
 - Response status: **200 (OK)**
 - **SECURITY ISSUE:** Admin privileges can be manipulated in tokens
 - **Risk:** Admin privileges can be modified arbitrarily
@@ -302,6 +309,8 @@ If attacker compromises admin token:
 - Massive privacy breach affecting entire user base
 
 #### ✅ ACTUAL RESULT: **PASS (404)**
+<img width="703" height="556" alt="image" src="https://github.com/user-attachments/assets/a728bad9-7ad5-40e0-a6ac-d0b0d9dac310" />
+
 - Server correctly returns 404 Not Found
 - Order data appears to be properly protected
 - **Note:** Should ideally return 403 Forbidden to clearly indicate permission issue, but 404 is acceptable for information hiding
@@ -340,8 +349,10 @@ If attacker compromises admin token:
   - Must verify user owns the cart being accessed
 
 #### 🔴 ACTUAL RESULT: **FAIL**
+<img width="736" height="462" alt="image" src="https://github.com/user-attachments/assets/7ee1e66f-f680-477f-98ed-c2b0aeda1edf" />
+
 - Response status: **200 (OK)**
-- Response: **token 설정 안해도 200** (Returns 200 even without token set)
+- Response: Returns 200 even without token set
 - **CRITICAL SECURITY ISSUE:** Cart access completely unprotected
 - **Risk:** Anyone can access anyone's cart without authentication
 
@@ -389,6 +400,8 @@ Attacker can:
   - Prevents identity theft
 
 #### 🔴 ACTUAL RESULT: **FAIL**
+<img width="748" height="494" alt="image" src="https://github.com/user-attachments/assets/47ebb112-45c3-4ec8-addd-a6c6de3013df" />
+
 - Response status: **200 (OK)**
 - **CRITICAL SECURITY ISSUE:** Any user can modify any other user's profile
 - **Risk:** Complete account takeover of any user account
@@ -625,4 +638,8 @@ After fixes are implemented:
 **Report Date:** January 16, 2026  
 **System Status:** 🔴 NOT PRODUCTION READY  
 **Recommendation:** DO NOT DEPLOY until all critical issues are resolved
+
+
+
+
 
