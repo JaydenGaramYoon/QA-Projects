@@ -6,8 +6,11 @@
 
 ## Test Execution
 
-![TC-ET-104: Order During Product Deletion](https://github.com/user-attachments/assets/119d2e2b-eabc-447a-9029-e1241e096bcc)
-
+<img 
+  src="https://github.com/user-attachments/assets/119d2e2b-eabc-447a-9029-e1241e096bcc"
+  alt="TC-ET-104: Order During Product Deletion"
+  style="width:700px; border-radius:8px; margin: 10px 0;"
+/>
 ---
 
 ## Test Results
