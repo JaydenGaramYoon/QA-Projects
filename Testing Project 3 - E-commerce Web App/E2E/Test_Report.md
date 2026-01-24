@@ -6,7 +6,7 @@
 
 ## Test Execution
 
-[TC-ET-104: Orphan Order Prevention Test](https://youtu.be/AHlb0ynxsZE)
+[![TC-ET-104: Orphan Order Prevention Test](https://img.youtube.com/vi/AHlb0ynxsZE/hqdefault.jpg)](https://youtu.be/AHlb0ynxsZE)
 
 ---
 
