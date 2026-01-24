@@ -6,7 +6,7 @@
 
 ## Test Execution
 
-[![TC-ET-104: Orphan Order Prevention Test](https://img.youtube.com/vi/AHlb0ynxsZE/hqdefault.jpg)](https://youtu.be/AHlb0ynxsZE)
+![TC-ET-104: Order During Product Deletion](https://github.com/user-attachments/assets/119d2e2b-eabc-447a-9029-e1241e096bcc)
 
 ---
 
@@ -22,7 +22,7 @@
 
 ---
 
-## TEST 1: Product Deletion - Frontend Cache Sync
+## TC-ET-102: Product Deletion - Frontend Cache Sync
 
 **Result:** FAIL | **Severity:** CRITICAL
 
@@ -42,7 +42,7 @@ Frontend cache not synchronized with backend deletion
 
 ---
 
-## TEST 2: Price Lock During Checkout
+## TC-ET-105: Price Lock During Checkout
 
 **Result:** PASS | **Severity:** CRITICAL
 
@@ -57,7 +57,7 @@ Frontend cache not synchronized with backend deletion
 
 ---
 
-## TEST 3: Order During Product Deletion
+## TC-ET-104: Order During Product Deletion
 
 **Result:** FAIL - P0 BUG | **Severity:** CRITICAL
 
