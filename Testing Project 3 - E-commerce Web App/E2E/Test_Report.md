@@ -11,6 +11,7 @@
   alt="TC-ET-104: Order During Product Deletion"
   style="width:700px; border-radius:8px; margin: 10px 0;"
 />
+
 Watch execution process with clear resolution: https://youtu.be/AHlb0ynxsZE 
 
 
