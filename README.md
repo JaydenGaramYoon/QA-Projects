@@ -15,6 +15,7 @@
   3) Test Analysis
      - [Exploratory Testing | Security Defects Analysis](https://github.com/JaydenGaramYoon/QA-Projects/blob/main/Testing%20Project%203%20-%20E-commerce%20Web%20App/CRITICAL_TESTS_ANALYSIS.md)
 
+[Automation 1: Selenium Training](https://github.com/JaydenGaramYoon/selenium-training-lab)
 
 
 
