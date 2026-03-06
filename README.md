@@ -4,9 +4,9 @@
 
 ### Ongoing Automation Labs 
 
-[Web Automation 1: Baisc Selenium, Maven, Java](https://github.com/JaydenGaramYoon/selenium-training-lab)
+[Web Automation 1: Basic Selenium, Maven, Java](https://github.com/JaydenGaramYoon/selenium-training-lab)
 
-[Web Automation 2: Framework with Selenium, TestNG](https://github.com/JaydenGaramYoon/selenium-framework-lab)
+[Web Automation 2: Building Framework with Selenium, TestNG](https://github.com/JaydenGaramYoon/selenium-framework-lab)
 
 ### Academic Testing Projects 
 
@@ -22,5 +22,6 @@
      - [Risk-Based Priority Matrix v1.0](https://github.com/JaydenGaramYoon/QA-Projects/blob/main/Testing%20Project%203%20-%20E-commerce%20Web%20App/Risk-Based%20Priority%20Matrix%20v1.0.pdf)
   3) Test Analysis
      - [Exploratory Testing | Security Defects Analysis](https://github.com/JaydenGaramYoon/QA-Projects/blob/main/Testing%20Project%203%20-%20E-commerce%20Web%20App/CRITICAL_TESTS_ANALYSIS.md)
+
 
 
